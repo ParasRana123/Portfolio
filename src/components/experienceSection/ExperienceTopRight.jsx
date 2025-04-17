@@ -3,8 +3,10 @@ import React from 'react'
 const ExperienceTopRight = () => {
   return (
     <div className='xl:w-[25%] lg:w-[30%] border border-amber-800 p-4 rounded-xl'>
-        <p className='text-lg text-center text-gray-500'>I sepcialise in <span className='text-white text-bold'>React and modern Javascript</span> , leveraging best practices to create scalable and maintable solutions. My experience spans working on diverse projects, from small business
-        websites to <span className='text-white text-bold'>complex front-end systems</span> ,  always aiming for clean code and exceptional user experiences.</p>
+        <p className='text-lg text-center text-gray-500'>
+  I specialize in <span className='text-white font-bold'>Full-stack Web Development</span> with strong expertise in <span className='text-white font-bold'>AI, ML, DL, and NLP.</span> Leveraging modern JavaScript and best practices, I build scalable, maintainable solutions  from responsive front-ends to robust back-ends and intelligent AI-powered systems <span className='text-white font-bold'>always aiming for clean code and exceptional user experiences.</span> 
+</p>
+
     </div>
   )
 }

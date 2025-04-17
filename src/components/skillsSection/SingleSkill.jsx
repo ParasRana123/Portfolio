@@ -11,5 +11,4 @@ const SingleSkill = ({imgSvg , text}) => {
     </div>
   )
 }
-
 export default SingleSkill

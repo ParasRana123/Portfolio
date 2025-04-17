@@ -4,29 +4,29 @@ import SingleProject from './SingleProject'
 
 const projects = [
     {
-      name: "Vacation of Africa",
-      year: "Mar2022",
+      name: "Movie Recoomendation System",
+      year: "Dec2024",
       align: "right",
       image: "../../public/images/website-img-1.jpg",
       link: "#",
     },
     {
-      name: "Moola App",
-      year: "Sept2022",
+      name: "Virtual Voice Assistant",
+      year: "Jan2025",
       align: "left",
       image: "../../public/images/website-img-2.webp",
       link: "#",
     },
     {
-      name: "Tourzania",
-      year: "Jan2023",
+      name: "AI Chatbot Platform",
+      year: "Oct2023",
       align: "right",
       image: "../../public/images/website-img-3.jpg",
       link: "#",
     },
     {
-      name: "Bank of Luck",
-      year: "May2024",
+      name: "Online Doctor Appointment Booking System",
+      year: "Feb2025",
       align: "left",
       image: "../../public/images/website-img-4.jpg",
       link: "#",
