@@ -8,9 +8,15 @@ const ContactForm = () => {
     const [message , setMessage] = useState("")
     const [success , setSuccess] = useState("")
 
-    const handleName = (e) => {}
-    const handleEmail = (e) => {}
-    const handleMessage = (e) => {}
+    const handleName = (e) => {
+      setName(e.target.value);
+    }
+    const handleEmail = (e) => {
+      setEmail(e.target.value);
+    }
+    const handleMessage = (e) => {
+      setEmail(e.target.value);
+    }
     
     const form = useRef();
 
@@ -23,7 +29,10 @@ const ContactForm = () => {
           })
           .then(
             () => {
-              console.log('SUCCESS!');
+              setName('');
+              setEmail('');
+              setMessage('');
+              setSuccess('Message sent successfully');
             },
             (error) => {
               console.log('FAILED...', error.text);
@@ -31,11 +40,12 @@ const ContactForm = () => {
           );
       };
   return (
-    <div className='flex flex-col gap-4'>
-        <form action="" ref={form} onSubmit={sendEmail}>
-            <input type="text" name="name" id="" placeholder='Your Name' className='h-12 rounded-lg bg-amber-900 px-2 text-white' required/>
-            <input type="email" name="name" id="" placeholder='Your Email' className='h-12 rounded-lg bg-amber-900 px-2' required/>
-            <textarea name="message" id="" placeholder='Message' rows="9" cols="50" className='rounded-lg bg-amber-900 p-2' required></textarea>
+    <div>
+      <p className='text-cyan-600'>{success}</p>
+        <form action="" ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
+            <input type="text" name="name" id="" placeholder='Your Name' className='h-12 rounded-lg bg-amber-900 px-2 text-white' value={name} onChange={handleName} required/>
+            <input type="email" name="name" id="" placeholder='Your Email' className='h-12 rounded-lg bg-amber-900 px-2' value={email} onChange={handleEmail} required/>
+            <textarea name="message" id="" placeholder='Message' rows="9" cols="50" className='rounded-lg bg-amber-900 p-2' value={message} onChange={handleMessage} required></textarea>
             <button type="submit" className='w-full rounded-lg border border-cyan-500 text-white h-12 font-bold text-xl hover:bg-cyan-700 bg-cyan-500 transistion-all duration-500'>Send</button>
         </form>
     </div>
