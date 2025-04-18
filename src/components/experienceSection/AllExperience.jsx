@@ -6,7 +6,7 @@ import { fadeIn } from '../../framerMotion/variants'
 
 const experiences = [
   {
-    job: "Blockchain & Cybersecurity.",
+    job: "Blockchain & Cybersecurity",
     company: "Smart India Hackathon",
     date: "Sept 2024 - Oct 2024",
     responsibilities: [
@@ -49,6 +49,7 @@ const AllExperience = () => {
                            initial='hidden'
                            whileInView='show'
                            viewport={{once: false , amount: 0}}
+                           className='hidden md:block'
                    >
                     <FaArrowRight className='text-6xl text-orange-500 lg:block sm:hiden'/>
                    </motion.div>

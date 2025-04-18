@@ -9,24 +9,27 @@ const ExperienceMain = () => {
   return (
     <div id='experience' className='max-w-[1200px] mx-auto px-4'>
       <motion.div
-              variants={fadeIn("down" , 0.2)}
-              initial='hidden'
-              whileInView='show'
-              viewport={{once: false , amount: 0.7}}
+        variants={fadeIn("down", 0.2)}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: false, amount: 0.7 }}
       >
-      <ExperienceText />
+        <ExperienceText />
       </motion.div>
       <motion.div
-              variants={fadeIn("down" , 0.2)}
-              initial='hidden'
-              whileInView='show'
-              viewport={{once: false , amount: 0}}
+        variants={fadeIn("down", 0.2)}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: false, amount: 0 }}
       >
-      <ExperienceTop />
+        <ExperienceTop />
       </motion.div>
-        <div className='w-full h-1 mt-4 bg-amber-900 lg:block sm:hidden'>
-            <AllExperience />
-        </div>
+
+      {/* 🟠 Show line only on large screens */}
+      <div className='w-full h-1 mt-4 bg-amber-900 lg:block hidden'></div>
+
+      {/* ✅ Always show the experiences */}
+      <AllExperience />
     </div>
   )
 }
