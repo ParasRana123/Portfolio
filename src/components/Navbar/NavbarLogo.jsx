@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 function NavbarLogo() {
   return (
-    <div>
-      <h1 className='text-white text-2xl sm:hidden md:block'>Paras Rana</h1>
-      <h1 className='text-white font-special font-extrabold text-4xl sm:block md:hidden'>PR</h1>
+    <div className="text-white font-bold text-2xl cursor-pointer">
+      <span className="lg:hidden">PR</span> {/* Show only on small screens */}
+      <span className="hidden lg:inline">Paras Rana</span> {/* Show on large screens */}
     </div>
-  )
+  );
 }
 
-export default NavbarLogo
+export default NavbarLogo;
