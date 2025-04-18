@@ -16,7 +16,7 @@ const FooterMain = () => {
             <p className='text-3xl text-[#9e9e9e]'>Paras Rana</p>
             <ul className='flex gap-4 text-[#9e9e9e] text-xl'>
                 {Links.map((item , index) => {
-                    return <li key={index}><a href='#' className='hover:text-white transistion-all duration-500 cursor-pointer'>{item.link}</a></li>
+                    return <li key={index}><a href={`#${item.section}`}  className='hover:text-white transistion-all duration-500 cursor-pointer'>{item.link}</a></li>
                 })}
             </ul>
         </div>
