@@ -5,35 +5,34 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../../framerMotion/variants'
 
 const experiences = [
+  {
+    job: "Blockchain & Cybersecurity.",
+    company: "Smart India Hackathon",
+    date: "Sept 2024 - Oct 2024",
+    responsibilities: [
+      "Traces final crypto receiver using transaction data analysis.",
+      "Applies machine learning and visual graphs to detect suspicious wallets.",
+      "Developed using React, Node.js, MongoDB, and Python backend.",
+    ],
+  },
     {
-      job: "Front-End Developer",
-      company: "Alex Apps",
-      date: "2022 - Present",
+      job: "Hackatron",
+      company: "IIIT Gwalior",
+      date: "Oct 2024 - Nov 2024",
       responsibilities: [
-        "Implementing reusable components.",
-        "Participating in large scale application.",
-        "Working on the performance of web applications.",
-        "Generating new ideas for better user experience.",
+        "Implemented a chatbot built with Langchain, Gemini and Llama.",
+        "Offers AI chat, PDF summarization, career and code tools.",
+        "Platform Boosts productivity with unified AI tools.",
       ],
     },
     {
-      job: "Course Instructor",
-      company: "Nucamp",
-      date: "2023 - Present",
+      job: "Postman API Hackathon",
+      company: "BITS Pilani",
+      date: "Dec 2024 - Jan 2025",
       responsibilities: [
-        "Explaining and facilitating web development concepts.",
-        "Help students with their assignments and grade them weekly.",
-        "Provide support for students through their learning journey.",
-      ],
-    },
-    {
-      job: "Course Instructor",
-      company: "Sprints",
-      date: "2024 - Present",
-      responsibilities: [
-        "Teaching JavaScript, React and TailwindCSS.",
-        "Participating in preparing course materials.",
-        "Helping students through their way in learning web development technologies.",
+        "Created an application that allows users to book doctor appointments and find the nearest clinic using geolocation.",
+        "Patients search doctors by illness, location, name.",
+        "Developed using PHP, SQL, JavaScript, and APIs.",
       ],
     },
   ];
