@@ -1,8 +1,15 @@
 import React from 'react'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../framerMotion/variants'
 
 const SingleExperience = ({ experience }) => {
   return (
-    <div className='md:h-[350px] md:w-[240px] sm:h-auto sm:w-full border-2 border-orange-500 border-dashed rounded-2xl mt-12 p-4'>
+    <motion.div 
+            variants={fadeIn("right" , 0.2)}
+            initial='hidden'
+            whileInView='show'
+            viewport={{once: false , amount: 0}}
+    className='md:h-[350px] md:w-[240px] sm:h-auto sm:w-full border-2 border-orange-500 border-dashed rounded-2xl mt-12 p-4'>
         <p className='font-bold text-cyan-500'>{experience.job}</p>
         <p className='text-orange-500'>{experience.company}</p>
         <p className='text-gray-500'>{experience.date}</p>
@@ -11,7 +18,7 @@ const SingleExperience = ({ experience }) => {
           return <li key={index}>{resp}</li>;
         })}
         </ul>
-    </div>
+    </motion.div>
   )
 }
 

@@ -9,6 +9,8 @@ import { FaHtml5 } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaJsSquare } from "react-icons/fa";
 import { FaPhp } from "react-icons/fa6";
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../framerMotion/variants'
 
 const skills = [
     {
@@ -54,7 +56,16 @@ const AllSkills = () => {
     <div>
         <div className='flex items-center justify-center relative gap-2 max-w-[1200px] mx-auto'>
             {skills.map((item , index) => {
-                return <SingleSkill key={index} text={item.skill} imgSvg={<item.icon/>} />
+                return (
+                    <motion.div
+                                      variants={fadeIn("up" , `0.${index}`)}
+                                      initial='hidden'
+                                      whileInView='show'
+                                      viewport={{once: false , amount: 0}}
+                    >
+                        <SingleSkill key={index} text={item.skill} imgSvg={<item.icon/>} />
+                    </motion.div>
+                );
             })}
         </div>
     </div>
