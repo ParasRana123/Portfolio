@@ -10,7 +10,6 @@ import NavbarMain from './components/Navbar/NavbarMain'
 import ProjectsMain from './components/projectsSection/ProjectsMain'
 import SkillsMain from './components/skillsSection/SkillsMain'
 import SubSkills from './components/skillsSection/SubSkills'
-import HelperSection from './HelperSection'
 
 function App() {
 

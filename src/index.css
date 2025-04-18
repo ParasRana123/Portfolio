@@ -24,3 +24,7 @@
 body {
   background-color: var(--color-darkBrown);
 }
+
+html, body {
+  overflow-x: hidden;
+}
