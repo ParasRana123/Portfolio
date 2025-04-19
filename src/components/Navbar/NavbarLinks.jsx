@@ -9,7 +9,7 @@ const Links = [
   { link: "Contact", section: "contact" }
 ];
 
-function NavbarLinks({ menuOpen }) {
+function NavbarLinks({ menuOpen , setMenuOpen }) {
   return (
     <ul className={`gap-6 text-white font-bold text-center 
       lg:flex lg:flex-row lg:relative lg:bg-black lg:top-0 lg:translate-x-0 
@@ -23,6 +23,7 @@ function NavbarLinks({ menuOpen }) {
             spy={true}
             duration={500}
             offset={-130}
+            onClick={() => setMenuOpen(false)}
             className='cursor-pointer text-white hover:text-cyan-300 transition-all duration-500'
           >
             {link.link}

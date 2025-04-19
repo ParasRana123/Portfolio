@@ -17,7 +17,7 @@ function NavbarMain() {
         <div className='hidden lg:block'>
           <NavbarLinks menuOpen={true} />
         </div>
-        <div className='hidden lg:block'>
+        <div className='lg:block'>
           <NavbarBtn />
         </div>
       </div>
@@ -29,8 +29,8 @@ function NavbarMain() {
       </div>
 
       {/* Mobile Nav Links when open */}
-      <div className='absolute top-[100%] w-full lg:hidden'>
-        <NavbarLinks menuOpen={menuOpen} />
+      <div className='absolute top-[100%] w-full lg:hidden left-0 mt-5'>
+        <NavbarLinks menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       </div>
     </nav>
   );
