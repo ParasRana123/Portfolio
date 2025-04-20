@@ -6,29 +6,29 @@ import { fadeIn } from '../../framerMotion/variants'
 
 const projects = [
     {
-      name: "Movie Recoomendation System",
-      year: "Dec2024",
+      name: "Virtual Voice Assistant",
+      year: "Jan 2025",
       align: "right",
       image: "/images/website-img-1.jpg",
       link: "https://github.com/ParasRana123/Movie_Recommender",
     },
     {
-      name: "Virtual Voice Assistant",
-      year: "Jan2025",
+      name: "Movie Recommendation System",
+      year: "Nov 2024",
       align: "left",
       image: "/images/website-img-2.webp",
       link: "https://github.com/ParasRana123/NOVA",
     },
     {
       name: "AI Chatbot Platform",
-      year: "Oct2023",
+      year: "Oct 2024",
       align: "right",
       image: "/images/website-img-3.jpg",
       link: "https://github.com/ParasRana123/ShardAI",
     },
     {
       name: "AI-Powered Facial Recognition Match System",
-      year: "Sept2024",
+      year: "Sept 2024",
       align: "left",
       image: "/images/website-img-4.jpg",
       link: "https://github.com/ParasRana123/CelebFacelookalike",
