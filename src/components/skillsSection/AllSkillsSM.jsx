@@ -11,19 +11,22 @@ import { FaJsSquare } from "react-icons/fa";
 import { FaPhp } from "react-icons/fa6";
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../framerMotion/variants'
+import { GiBrain } from "react-icons/gi";
+import { BsTranslate } from "react-icons/bs";
+import { SiTailwindcss } from "react-icons/si";
 
 const skills = [
     {
-        skill: "HTML",
-        icon: FaHtml5
+        skill: "AI/ML",
+        icon: GiBrain
     },
     {
-        skill: "CSS",
-        icon: FaCss3Alt
+        skill: "NLP",
+        icon: BsTranslate
     },
     {
-        skill: "JavaScript",
-        icon: FaJsSquare
+        skill: "Tailwind CSS",
+        icon: SiTailwindcss
     },
     {
         skill: "PHP",
