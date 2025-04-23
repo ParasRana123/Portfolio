@@ -1,5 +1,6 @@
 import './App.css'
 import AboutMeMain from './components/aboutMeSection/AboutMeMain'
+import CertificateMain from './components/certficateSection/CertificateMain'
 import ContactMeMain from './components/contactMeSection/ContactMeMain'
 import ExperienceMain from './components/experienceSection/ExperienceMain'
 import FooterMain from './components/footer/FooterMain'
@@ -24,6 +25,7 @@ function App() {
       <SubSkills />
       <ExperienceMain />
       <ProjectsMain />
+      <CertificateMain />
       <ContactMeMain />
       <FooterMain />
     </main>
