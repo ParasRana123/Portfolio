@@ -6,29 +6,33 @@ const Links = [
   { link: "Skills", section: "skills" },
   { link: "Experience", section: "experience" },
   { link: "Projects", section: "projects" },
+  { link: "Certificate", section: "certificates" },
   { link: "Contact", section: "contact" }
 ];
 
-function NavbarLinks({ menuOpen , setMenuOpen }) {
+function NavbarLinks({ menuOpen, setMenuOpen }) {
   return (
-    <ul className={`gap-6 text-white font-bold text-center 
-      lg:flex lg:flex-row lg:relative lg:bg-black lg:top-0 lg:translate-x-0 
-      ${menuOpen ? "flex" : "hidden"} flex-col absolute top-[120%] left-[50%] -translate-x-[50%] 
-      text-xl bg-[rgba(173,216,230,0.7)] backdrop-blur-lg w-full py-1`}>
-      {Links.map((link, index) => (
-        <li key={index} className='group'>
+    <ul
+      className={`flex flex-col items-center gap-6 text-white font-bold text-center
+        absolute top-[120%] left-1/2 -translate-x-1/2 
+        text-xl bg-[rgba(173,216,230,0.7)] backdrop-blur-lg w-full py-3 px-4
+        ${menuOpen ? "flex" : "hidden"}
+        lg:flex lg:flex-row lg:static lg:translate-x-0 lg:bg-black lg:py-0 lg:px-6 lg:w-auto`}
+    >
+      {Links.map((item, index) => (
+        <li key={index} className="group">
           <Link
-            to={link.section}
+            to={item.section}
             smooth={true}
             spy={true}
             duration={500}
             offset={-130}
             onClick={() => setMenuOpen(false)}
-            className='cursor-pointer text-white hover:text-cyan-300 transition-all duration-500'
+            className="cursor-pointer text-white hover:text-cyan-300 transition-all duration-300"
           >
-            {link.link}
+            {item.link}
           </Link>
-          <div className='mx-auto bg-cyan-600 w-0 group-hover:w-full h-[1px] transition-all duration-500'></div>
+          <div className="mx-auto bg-cyan-600 w-0 group-hover:w-full h-[2px] transition-all duration-300"></div>
         </li>
       ))}
     </ul>
