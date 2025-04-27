@@ -1,4 +1,5 @@
 import React from 'react'
+import { BsBoxArrowUpRight } from "react-icons/bs";
 
 const SingleCertificate = ({ name, year, issued, link }) => {
   return (
@@ -12,9 +13,9 @@ const SingleCertificate = ({ name, year, issued, link }) => {
         href={link} 
         target="_blank" 
         rel="noopener noreferrer" 
-        className="text-blue-500 hover:underline break-words mt-auto"
+        className="flex items-center gap-2 text-blue-500 hover:no-underline break-words mt-auto"
       >
-        View Certificate
+        View Certificate  <BsBoxArrowUpRight />
       </a>
     </div>
   )
