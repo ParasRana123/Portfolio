@@ -6,32 +6,32 @@ import { fadeIn } from '../../framerMotion/variants'
 
 const projects = [
     {
-      name: "Virtual Voice Assistant",
-      year: "Jan 2025",
+      name: "LLM Based Website Builder",
+      year: "May 2025",
       align: "right",
       image: "/images/website-img-1.jpg",
-      link: "https://github.com/ParasRana123/Movie_Recommender",
+      link: "https://github.com/ParasRana123/boult.new",
     },
     {
-      name: "Movie Recommendation System",
-      year: "Nov 2024",
+      name: "Custom Deployment Platform",
+      year: "May 2025",
       align: "left",
       image: "/images/website-img-2.webp",
-      link: "https://github.com/ParasRana123/NOVA",
+      link: "https://github.com/ParasRana123/vercel",
     },
     {
-      name: "AI Chatbot Platform",
-      year: "Oct 2024",
+      name: "Cloud-Based Online Code Editor",
+      year: "May 2025",
       align: "right",
       image: "/images/website-img-3.jpg",
-      link: "https://github.com/ParasRana123/ShardAI",
+      link: "https://github.com/ParasRana123/replit.io",
     },
     {
-      name: "AI-Powered Facial Recognition Match System",
-      year: "Sept 2024",
+      name: "Movie Recommendation Platform",
+      year: "Oct 2023",
       align: "left",
       image: "/images/website-img-4.jpg",
-      link: "https://github.com/ParasRana123/CelebFacelookalike",
+      link: "https://github.com/ParasRana123/Movie_Recommender",
     },
   ];
 
